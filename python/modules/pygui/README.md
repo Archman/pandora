@@ -1,8 +1,8 @@
-python scripts/functions for data visulization
+__python scripts/functions for data visulization__
 
-function list:
---- myfig
-        |---save() : save matplotlib.pyplot figure into other formats, 
+__function list:__
+--- *myfig*
+        |---_save()_ : save matplotlib.pyplot figure into other formats, 
                      e.g. png, pdf, eps, svg, etc.
 
 =================
