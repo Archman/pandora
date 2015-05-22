@@ -39,12 +39,13 @@ fclose(fid2);
 title(strcat('P_{out}/P_0=',num2str(sum(sum(fldinten))/10e6),' [2k,10,0.1,1%]'))
 
 %%
-ncar  = 401;
+ncar  = 151;
 dgird = 4e-6;
 xlamd = 10e-6;
-
-filestat2 = dir('./TLM/rad.out.fld');
-fid3 = fopen('./TLM/rad.out.fld');
+% filename = './TLM/rad.out.fld';
+filename = '/home/tong/test/test/template.out.fld';
+filestat2 = dir(filename);
+fid3 = fopen(filename);
 alldata = fread(fid3,'double');
 totalstep = filestat2.bytes/ncar/ncar/16;
 fldi = reshape(alldata,[ncar*ncar*2,totalstep]);

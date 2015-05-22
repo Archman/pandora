@@ -124,7 +124,7 @@ class FELcalc(PhysicalConstants):
 				  + a16*etad**a17*etae**a18*etag**a19
 		Lg3D  = Lg1D*(1+capLambda)
 		rho3D = lambdau/4/np.pi/np.sqrt(3)/Lg3D
-		Psat  = 1.6*rho1D*(Lg1D/Lg3D)**2*gamma0*0.511*Ipk/1000 #GW
+		Psat  = 1.6*rho1D*(Lg1D/Lg3D)**2*gamma0*0.511*Ipk*1e6 #W
 
 		# update and return calculated parameters
 		self.au     = au
